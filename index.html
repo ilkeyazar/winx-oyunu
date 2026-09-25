@@ -3,3 +3,1025 @@
 <head>
 <meta name="google-site-verification" content="4ELJp12MxYEm3T2KgesKV_QGzyQc5-yApBxuXGchgNg" />
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#6544a8">
+<title>Winx • Alfea Sihir Savaşı v25</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@600;700;800&display=swap');
+:root{--ink:#2e2045;--glass:rgba(255,255,255,.92);--purple:#7048b4}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Nunito,sans-serif;color:var(--ink)}body{overflow-x:hidden;background:#a991ca}
+button{font:inherit}
+.screen{display:none;min-height:100vh;position:relative;overflow:hidden}.screen.active{display:block}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.bg.alfea{background-image:linear-gradient(rgba(72,42,112,.15),rgba(72,42,112,.12)),url("data:image/png;base64,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ルフ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w/vP3y4+/DB4/sHjx7t7u3dv3f/4f6jh/fvPdzbf7S/v//g3t6De/fuPry3d+/x3r179+7e3b1/9+De3t6j+/cfPty/t3v/8f2De4f79/fv3793ePfBwd39ew937z3au3f/wYO9e/v3Hx3s33t8d+/B4b2He/cODvbuHjzae7x79+D+wYO7+3fu37u3e/dgd+/+w/t39+7fe/Bg9/7+/v3de3v3Hx7cPbx/9/7+g3v7Dx/ce/Tg0e49+z/cfbB/98H9vXv39g8f3H/04ODRw4cPH+0fPDh4cO/x/u59ez249/Dh7t39vfv7D/fvHdw7vLd3d+/+3v2H9/cf3n1w7+79+/ce3rt/9+He44OH9+8/vLe/e7B77+D+47t3Dw72Hzy4f3h4eHB378GDvbv7ew/v7T3cv7f7eG/v8eP9R/t7+/v37z18dHD33v7j/YMH9x/s7e3t7e4fHOzfv3v/7oO7e3fvP9y7d/fevbv37u7u7t27e/fhwb17d/f29g8P7u8f3rt778HD/Xv3H9zbv/fg7r27ewf39h/e27u/f3B/d+/B3v27d+/v3tu7t3fv7u7d3b27D/fu3d179ODu/b2He/cPDx7ee/Rg78Hd/b17D+7e37v3cO/uvbv3Dh7evb/34MHd+/ce7d3bv7f3cO/B3ft39+7de3B3b//x4cPdu/cePny4d3/38cOHD/fvP9rbfXR3b//Bo717e/v39g7u7z14sHf/3qMHjx7de7S/f//g7uPdu48ODu7dfbB37979hwf3H+zee/jgwYO9x48e7h08uLd799793bu7e/ce3Xtw98H9ew/u7j7avbe7e3/37sGDvfv3D+/d3Xtw98G9u3sH9+4/vHd3b+/+4/v3HzzYe/To/sP7h/fu3t27f+/u/bv37j24e293b+/ewcP7B/f2Dx7s3du7f+/u3ft37+7fvffowb17jx7ef3Tv/v2De/sP9+7tPjx4tHf/7sMH9/bv3t3be7h/b+/u3v17dx/d23t0797du/v7ewcP9/ce7h7cvb937+7+4f6Du3sPHu4+eLR77+H9h/cf7t1/ePf+4cPde48OHj56cP/h7t39e/fuPrx798Hduw8f3L17b/fewb17e4f3H+3d29u/f+/h/t3de3fuPty/u/do797u/sODg3v37u0f7u492j/cf/Bw98H9e3f3Ht57sHfv3u69u3sPH957ePfu4YO9u7uP7j7cvbe393Dv3u7e3YODvYODvfv7e/cO7u492r13f//e7r2HB48e7j/Yvfv4wd29+3fu3tu7e/f+3bv7dx/du7u3d+/Bw/sP79+/e+/evfuPHt67d/f+wYN7e4cPDu7ee/jw4d7d3Ye7D+/dv/fg/sHde3ce7j7Yvb97d+/hwf17j/buHjzaO3i4u3f38d37ew8fPtzbv3v/wb17e3ce3N29v/dw797u4/sP9w/27z16dP/h3bu7D/fv7t2/f+/u3bv37u4fHNzdv3f/8O7+o7sP7u3dfXjv3r27e3sH9+7du/dw7/7B3t6D3bv3Dx7ee/Bg98Hewd17e/cePry7e3/3/r17u3fv3b2/e3f3/t7du4/u7e3f27u3d3fvwb293bt7B4f39h7evXf34e79hw8f3N2/e+/e/YN7D3fvP9rbe7B3f+/e/uO9vUcP9u7v7j589Oj+/fv37u0/eHBv797e/t7efwEBAAD//wMAv5o6gJ2873EAAAAnSURBVNgBY/jfYhgFGAWjYBSMglEwClhG8j/kR45yFIyCUTAKRsEoxKNgFAxKNApGo8AoGAWjYBSMAtYx8n9o6iFAwSgYBaNgFAyfoh8Fo2AUjIJRMApGwSgYBaNgFIyCUQAAAP//AwC+Z1lO7G4H0AAAAABJRU5ErkJggg==")}
+.region-bg.ice{background:radial-gradient(circle at 50% 20%,#eaffff,transparent 30%),linear-gradient(180deg,#173e64,#71b8d0 58%,#d9f4f1)}
+.region-bg.forest{background:radial-gradient(circle at 50% 20%,rgba(174,247,184,.8),transparent 30%),linear-gradient(180deg,#174e40,#4c9b64 58%,#c6dca0)}
+.region-bg.dark{background:radial-gradient(circle at 50% 25%,rgba(139,81,198,.7),transparent 30%),linear-gradient(180deg,#160f31,#4b2e68 55%,#1a162b)}
+.region-bg.tower{background:radial-gradient(circle at 50% 18%,rgba(255,100,160,.35),transparent 25%),linear-gradient(180deg,#24143e,#7c3c76 56%,#26162f)}
+.region-bg.tech{background:radial-gradient(circle at 50% 18%,rgba(91,221,255,.5),transparent 25%),linear-gradient(180deg,#092b45,#176a84 55%,#182c59)}
+
+.map-card{padding:20px;border-radius:28px;background:rgba(255,255,255,.94);border:1px solid #fff;box-shadow:0 18px 50px rgba(40,20,70,.23)}
+.map-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:16px}
+.region-btn{border:2px solid #e5daf4;border-radius:20px;padding:12px 10px;background:#fff;cursor:pointer;font-weight:900;text-align:center;box-shadow:0 6px 16px rgba(35,20,60,.12);transition:.18s}
+.region-btn:hover{transform:translateY(-3px);border-color:#7d4ac8}
+.region-btn strong{display:block;font-size:1.05rem;color:#2e1b4b}
+.region-btn span{display:block;font-size:.78rem;opacity:.74}
+.region-monster-thumb{width:68px;height:68px;object-fit:contain;margin:4px auto;display:block}
+
+.cinematic{position:fixed;inset:0;z-index:999;background:rgba(12,6,26,.88);backdrop-filter:blur(8px);display:grid;place-items:center;padding:16px}
+.cinematic-card{width:min(900px,96vw);border-radius:32px;padding:26px 20px;background:#fff;border:3px solid #1f1138;text-align:center;box-shadow:0 24px 70px rgba(0,0,0,.45)}
+.cinematic-title{font:900 clamp(2rem,5vw,3.2rem) 'Baloo 2';line-height:1;margin:0 0 6px;color:#180b2d}
+.cinematic-stage{position:relative;min-height:270px;display:flex;align-items:flex-end;justify-content:center;gap:35px;margin:12px 0 16px}
+.cinematic-actor{width:40%;max-width:260px;min-width:140px;text-align:center}
+.cinematic-actor img{width:100%;height:250px;object-fit:contain}
+.cinematic-actor b{display:block;font-size:1.05rem;margin-top:4px}
+.cinematic-actor.loser{filter:grayscale(1) brightness(.65);opacity:.6;transform:scale(.92)}
+.cinematic-actor.winner{transform:scale(1.08)}
+.cinematic-actor.winner img{filter:drop-shadow(0 0 25px rgba(255,215,0,.75))}
+.cinematic-spark{position:absolute;inset:0;pointer-events:none}
+
+.score-hud{display:flex;gap:8px;align-items:center;background:#fff;color:#111;padding:5px 12px;border-radius:999px;font-weight:950;box-shadow:0 3px 10px rgba(0,0,0,.15)}
+@media(max-width:1050px){.map-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:680px){.map-grid{grid-template-columns:repeat(2,1fr)}.cinematic-stage{min-height:210px;gap:12px}.cinematic-actor img{height:190px}}
+</style>
+<style>
+/* v20: 3 can (3 yıldız) sistemi */
+.lives-wrap{display:inline-flex;align-items:center;gap:3px;margin-left:4px;vertical-align:middle}
+.life-star{font-size:1.15rem;line-height:1;filter:drop-shadow(0 1px 2px rgba(0,0,0,.35));transition:transform .2s ease, opacity .2s ease}
+.life-star.lost{opacity:.22;filter:grayscale(1);transform:scale(.85)}
+.game-over-banner{background:#ffe3e3;border:2px solid #ff4d6d;color:#7a001a;padding:8px 14px;border-radius:14px;font-weight:950;margin:8px auto;max-width:520px;text-align:center}
+</style>
+<style>
+/* v21: canavarın periye doğru hareket etmesi + dokununca 1 can gitmesi + net puan takibi */
+.enemy-touch-fx{position:absolute;inset:0;pointer-events:none;z-index:22;background:radial-gradient(circle at 25% 65%, rgba(255,30,80,.42), transparent 48%);opacity:0;transition:opacity .25s ease}
+.enemy-touch-fx.on{opacity:1}
+.fairy-touch-hit{animation:fairyTouchHurt .42s ease !important}
+@keyframes fairyTouchHurt{0%{transform:translateX(0) scale(1)}25%{transform:translateX(-14px) rotate(-4deg) scale(.96)}60%{transform:translateX(10px) rotate(3deg) scale(.98)}100%{transform:none}}
+</style>
+<style>
+/* v22: 50 puana özel 3 yıldızlı Alfea Başarı Belgesi */
+.badge-50{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(90deg,#ffe885,#ffd043);color:#4a2b00;border:2px solid #b87d00;border-radius:999px;padding:6px 14px;font-weight:950;font-size:.9rem;box-shadow:0 4px 12px rgba(184,125,0,.28);margin-top:6px}
+.cert-modal{position:fixed;inset:0;z-index:1200;background:rgba(18,7,34,.86);backdrop-filter:blur(8px);display:grid;place-items:center;padding:16px}
+.cert-card{width:min(760px,96vw);border-radius:28px;padding:26px;background:linear-gradient(180deg,#fffdf7,#fff6df);border:4px solid #d4a017;color:#3d2500;box-shadow:0 25px 70px rgba(0,0,0,.45);text-align:center;position:relative}
+.cert-ribbon{display:inline-block;padding:6px 16px;border-radius:999px;background:#b87d00;color:#fff;font-weight:950;font-size:.84rem;letter-spacing:.06em}
+.cert-title{font:900 clamp(1.8rem,4.5vw,2.7rem) 'Baloo 2';margin:10px 0 4px;color:#4a2b00;line-height:1.1}
+.cert-stars{font-size:2.8rem;letter-spacing:6px;margin:2px 0}
+.cert-fairy-img{width:120px;height:120px;object-fit:contain;margin:4px auto;display:block;filter:drop-shadow(0 8px 14px rgba(184,125,0,.35))}
+.cert-text{font-size:1.02rem;font-weight:850;line-height:1.45;max-width:580px;margin:8px auto 14px}
+.cert-signature{display:flex;justify-content:space-between;align-items:center;max-width:520px;margin:12px auto 0;border-top:2px dashed #d4a017;padding-top:10px;font-size:.88rem;font-weight:900}
+</style>
+<style>
+/* v23: 50 puanda garanti çıkan ödül kutlama kartı */
+.reward-modal{position:fixed;inset:0;z-index:1300;background:rgba(18,7,38,.88);backdrop-filter:blur(9px);display:grid;place-items:center;padding:16px}
+.reward-card{width:min(720px,96vw);border-radius:30px;padding:24px 20px;background:linear-gradient(180deg,#ffffff,#fff5db);border:4px solid #f3ba2f;box-shadow:0 24px 70px rgba(0,0,0,.5);text-align:center;color:#3d2400}
+.reward-badge{display:inline-block;padding:6px 16px;border-radius:999px;background:#7b42f6;color:#fff;font-weight:950;font-size:.85rem}
+.reward-title{font:900 clamp(1.9rem,4.6vw,2.8rem) 'Baloo 2';margin:8px 0 2px;line-height:1.1;color:#351a00}
+.reward-stars{font-size:2.9rem;letter-spacing:6px;margin:2px 0 6px}
+.reward-fairy-img{width:125px;height:125px;object-fit:contain;margin:6px auto;display:block;filter:drop-shadow(0 10px 18px rgba(243,186,47,.45))}
+.reward-desc{font-size:1.03rem;font-weight:900;line-height:1.4;max-width:560px;margin:8px auto 16px}
+.reward-score-pill{display:inline-flex;gap:8px;align-items:center;background:#fff;border:2px solid #f3ba2f;border-radius:999px;padding:6px 14px;font-weight:950;margin-bottom:14px}
+</style>
+<style>
+/* v24: Tam Alfea Peri Diploması (Karakter adı, tarih ve mühürlü) */
+.diploma-card{
+  width:min(820px,96vw);
+  border-radius:26px;
+  padding:26px 22px;
+  background:radial-gradient(circle at 50% 10%,#fffef8,#fff6df 65%,#fcecc5);
+  border:6px double #c89211;
+  box-shadow:0 25px 75px rgba(0,0,0,.5), inset 0 0 45px rgba(200,146,17,.16);
+  color:#3b2302;
+  text-align:center;
+  position:relative;
+}
+.diploma-header{font:900 1rem 'Baloo 2';letter-spacing:.2em;text-transform:uppercase;color:#8f6300;margin-bottom:2px}
+.diploma-title{font:900 clamp(2rem,4.8vw,3rem) 'Baloo 2';line-height:1.08;margin:2px 0 4px;color:#472600}
+.diploma-stars{font-size:2.7rem;letter-spacing:7px;margin:2px 0 6px}
+.diploma-body{font-size:1.05rem;font-weight:850;line-height:1.5;max-width:620px;margin:8px auto 12px}
+.diploma-fairy-name{font-size:1.35rem;font-weight:950;color:#6b28b8;display:inline-block;padding:2px 10px;border-bottom:2px solid #c89211}
+.diploma-meta-grid{display:grid;grid-template-columns:1fr 120px 1fr;gap:10px;align-items:center;max-width:620px;margin:14px auto 8px;border-top:2px dashed #caa24d;padding-top:10px;font-size:.9rem;font-weight:900}
+.diploma-seal{width:92px;height:92px;border-radius:50%;margin:auto;display:grid;place-items:center;background:radial-gradient(circle,#ffe88f,#dca31f);border:3px solid #8e6200;box-shadow:0 6px 14px rgba(142,98,0,.35);font:900 .76rem 'Baloo 2';color:#472700;line-height:1.15;text-transform:uppercase;transform:rotate(-8deg)}
+</style>
+<style>
+/* v25: 50 puana özel net zafer kutlama penceresi */
+.victory50-modal{position:fixed;inset:0;z-index:1400;background:rgba(14,6,30,.88);backdrop-filter:blur(8px);display:grid;place-items:center;padding:16px}
+.victory50-card{width:min(660px,96vw);border-radius:28px;padding:26px 20px;background:linear-gradient(180deg,#ffffff,#fff7df);border:4px solid #f5b300;text-align:center;color:#3b2200;box-shadow:0 25px 70px rgba(0,0,0,.5)}
+.victory50-badge{display:inline-block;padding:6px 16px;border-radius:999px;background:#6a32c9;color:#fff;font-weight:950;font-size:.85rem}
+.victory50-title{font:900 clamp(2rem,5vw,3rem) 'Baloo 2';line-height:1.1;margin:8px 0 2px;color:#3b2000}
+.victory50-stars{font-size:3rem;letter-spacing:7px;margin:2px 0 6px}
+.victory50-img{width:130px;height:130px;object-fit:contain;margin:4px auto;display:block;filter:drop-shadow(0 10px 18px rgba(245,179,0,.42))}
+.victory50-text{font-size:1.06rem;font-weight:900;line-height:1.45;max-width:520px;margin:8px auto 14px}
+.victory50-score{display:inline-flex;gap:8px;align-items:center;background:#fff;border:2px solid #f5b300;border-radius:999px;padding:6px 14px;font-weight:950;margin-bottom:14px}
+</style>
+</head>
+<body>
+<div class="sparkles" id="sparkles"></div>
+<div id="lightburst" class="lightburst"></div>
+
+<section id="homeScreen" class="screen active">
+  <div class="bg alfea"></div>
+  <div class="wrap home-content">
+    <div class="topbar">
+      <div class="logo">Winx Club • Alfea v25</div>
+      <div class="top-actions">
+        <div class="score-hud">🏆 Rekor: <span id="topScore">0</span> Puan</div>
+        <button class="btn" id="homeSoundBtn" onclick="toggleAudio()">🔊 Ses: Açık</button>
+      </div>
+    </div>
+
+    <div class="brand">
+      <div class="winx">Winx</div>
+      <h1>Alfea Sihir Savaşı v25</h1>
+      <p>5 Bölge Açık • Canavarlar Sana Doğru Geliyor • 50 Puana Ulaş ve Başarıyı Aç!</p>
+    </div>
+
+    <div class="panel">
+      <h2>Perini Seç</h2>
+      <div class="sub">Tüm periler eşit güçte dengelendi</div>
+      <div class="fairies" id="fairyList"></div>
+      <div class="hint">🎯 <b>Oyun Kuralı:</b> Canavar sana doğru adım adım yaklaşır. Temas ederse <b>1 Can</b> kaybedersin! Büyülerinle onu geriye püskürt ve 50 puana ulaş!</div>
+    </div>
+  </div>
+</section>
+
+<!-- BÖLGE SEÇİM EKRANI -->
+<section id="mapScreen" class="screen">
+  <div id="mapBg" class="region-bg alfea"></div>
+  <div class="wrap" style="padding-top:20px;padding-bottom:35px;">
+    <div class="topbar">
+      <div class="logo">🗺️ Boyut Haritası</div>
+      <div class="top-actions">
+        <div class="score-hud">⭐ Can: <span id="mapLives" class="lives-wrap"></span> | 🏆 Skor: <span id="mapScore">0</span></div>
+        <button class="btn" onclick="openHome()">🏠 Ana Menü</button>
+      </div>
+    </div>
+
+    <div class="map-card">
+      <h2 style="font:800 2.2rem 'Baloo 2';margin:0;text-align:center;">Savaş Bölgesi Seç</h2>
+      <p style="text-align:center;font-weight:800;opacity:.75;margin:3px 0 14px;">5 bölgenin hepsi açık! İstediğin boyutta savaşa gir ve puan topla.</p>
+      
+      <div class="map-grid" id="regionGrid"></div>
+      <div id="gameOverBox" style="display:none;" class="game-over-banner">⚠️ 3 Canın bitti! Puanın sıfırlandı. Tekrar perini seçip baştan başlayabilirsin.</div>
+    </div>
+  </div>
+</section>
+
+<section id="battleScreen" class="screen">
+  <div id="battleBg" class="bg alfea"></div>
+  <div class="battle-top">
+    <div class="game-title">⚔️ <span id="arenaTitle">Alfea Avlusu</span></div>
+    <div class="battle-actions">
+      <div class="score-hud">⭐ Can: <span id="battleLives" class="lives-wrap"></span> | Puan: <span id="hudScore">0</span></div>
+      <button class="btn" onclick="openMap()">🗺️ Harita</button>
+      <button class="btn" id="battleSoundBtn" onclick="toggleAudio()">🔊 Ses: Açık</button>
+    </div>
+  </div>
+
+  <div class="battle-wrap">
+    <div class="battle-hud">
+      <div class="hud-side fairy">
+        <img id="hudFairyImg" src="" alt="Fairy">
+        <div>
+          <b id="hudFairyName">Bloom</b>
+          <div class="power-label">Sihir Gücü <span id="hudFairyHPText">100 / 100</span></div>
+          <div class="powerbar"><div id="fairyHpBar"></div></div>
+        </div>
+      </div>
+
+      <div class="timer" id="timer">45</div>
+
+      <div class="hud-side enemy">
+        <div class="monster-hud-info">
+          <b id="hudMonsterName">Gölge Canavarı</b>
+          <div class="monster-detail" id="hudMonsterDetail">Karanlık Pençe</div>
+          <div class="power-label">Canavar Gücü <span id="hudMonsterHPText">100 / 100</span></div>
+          <div class="powerbar"><div id="enemyHpBar"></div></div>
+        </div>
+        <img id="hudMonsterImg" src="" alt="Monster">
+      </div>
+    </div>
+
+    <div class="arena" id="arena">
+      <div id="touchFx" class="enemy-touch-fx"></div>
+      <div class="fx-layer" id="fxLayer"></div>
+      <div class="trap-layer" id="trapLayer"></div>
+      <div id="fairyAura" class="aura"></div>
+      <div id="enemyAura" class="aura enemy-aura"></div>
+
+      <div class="fighter fairy" id="fairyFighter">
+        <img id="battleFairyImg" src="" alt="Fairy">
+      </div>
+
+      <div class="fighter monster" id="monsterFighter">
+        <img id="battleMonsterImg" src="" alt="Monster">
+      </div>
+    </div>
+
+    <div class="abilities" id="abilityList"></div>
+    <div class="move-row">
+      <button class="move-btn" onclick="moveFairy(-6)">◀</button>
+      <span>Pozisyon Al / Büyü İle Canavarı İt</span>
+      <button class="move-btn" onclick="moveFairy(6)">▶</button>
+    </div>
+    <div class="battle-prompt" id="battlePrompt">Hamleni yap! Canavar yaklaştıkça kırmızı pençe büyüsüyle vurabilir.</div>
+  </div>
+</section>
+
+<!-- SİNEMATİK SONUÇ EKRANI -->
+<div id="cinematicScreen" class="cinematic" style="display:none;">
+  <div class="cinematic-card">
+    <div class="cinematic-title" id="cinemaTitle">BÖLGE TEMİZLENDİ!</div>
+    <div class="stars" id="cinemaStars">⭐⭐⭐</div>
+    <div id="badgeArea"></div>
+
+    <div class="cinematic-stage">
+      <div class="cinematic-actor" id="cinemaFairyBox">
+        <img id="cinemaFairyImg" src="" alt="Peri">
+        <b id="cinemaFairyName">Bloom</b>
+      </div>
+      <div style="font:900 2.2rem 'Baloo 2';color:#7846b8;align-self:center;">VS</div>
+      <div class="cinematic-actor" id="cinemaMonsterBox">
+        <img id="cinemaMonsterImg" src="" alt="Canavar">
+        <b id="cinemaMonsterName">Canavar</b>
+      </div>
+    </div>
+
+    <div class="score-board">
+      <div class="score-box" id="cinemaFairyScoreBox">
+        <div class="score-name" id="cinemaFairyScoreName">PERİ</div>
+        <strong id="cinemaFairyScore">0</strong>
+      </div>
+      <div class="score-vs">:</div>
+      <div class="score-box" id="cinemaMonsterScoreBox">
+        <div class="score-name" id="cinemaMonsterScoreName">CANAVAR</div>
+        <strong id="cinemaMonsterScore">0</strong>
+      </div>
+    </div>
+
+    <p id="cinemaDesc" style="font-weight:900;opacity:.8;margin:8px auto 14px;max-width:580px;">Tebrikler! Alfea bu tehditten başarıyla korundu.</p>
+
+    <div class="result-actions">
+      <button class="btn primary" id="cinemaNextBtn" onclick="nextBattleFromCinema()">🗺️ Sıradaki Bölgeye Geç</button>
+      <button class="btn" onclick="retryBattle()">🔄 Yeniden Oyna</button>
+      <button class="btn" onclick="openMap()">🗺️ Harita</button>
+    </div>
+  </div>
+</div>
+
+<!-- 50 PUAN ALFEA BİTİRME DİPLOMASI MODALI -->
+<div id="certModal" class="cert-modal" style="display:none;">
+  <div class="diploma-card">
+    <div class="diploma-header">Alfea Peri Koleji • Üstün Hizmet Nişanı</div>
+    <div class="diploma-title">🎓 Alfea Peri Diploması</div>
+    <div class="diploma-stars">⭐⭐⭐</div>
+
+    <img id="certFairyImg" class="reward-fairy-img" src="" alt="Mezun Peri">
+
+    <div class="diploma-body">
+      Bu resmi diploma, Sihirli Boyut canavarlarına karşı cesurca savaşıp <b>50 Puan barajını aşan</b> kahraman perimiz 
+      <div class="diploma-fairy-name" id="certFairyName">Bloom</div>'e; Alfea Yüksek Konseyi tarafından <b>Usta Muhafız Peri</b> unvanıyla takdim edilmiştir.
+    </div>
+
+    <div class="diploma-meta-grid">
+      <div style="text-align:left;">
+        <div><b>Tarih:</b> <span id="diplomaDate">Bugün</span></div>
+        <div><b>Kayıt No:</b> ALFEA-50-WINX</div>
+      </div>
+      <div>
+        <div class="diploma-seal">Alfea<br>Mühürlü<br>⭐⭐⭐</div>
+      </div>
+      <div style="text-align:right;">
+        <div><b>Onaylayan:</b></div>
+        <div>Müdüre Faragonda ✍️</div>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:center;gap:10px;margin-top:14px;flex-wrap:wrap;">
+      <button class="btn primary" onclick="closeCertModal()">✨ Göreve Devam Et</button>
+      <button class="btn" onclick="openHome();closeCertModal();">🏠 Ana Menü</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* 5 AÇIK BÖLGE VE CANAVARLARI */
+const REGIONS=[
+  {
+    id:'alfea',
+    name:'Alfea Bahçesi',
+    bgClass:'alfea',
+    desc:'Gölge Canavarı okulu tehdit ediyor!',
+    monsterName:'Gölge Canavarı',
+    monsterType:'Karanlık Pençe',
+    monsterImg:'https://images.wikia.com/winx/images/d/d4/Shadow_Creature.png'
+  },
+  {
+    id:'ice',
+    name:'Buz Dağları',
+    bgClass:'ice',
+    desc:'Buz Canavarı her şeyi donduruyor!',
+    monsterName:'Buz Canavarı',
+    monsterType:'Donmuş Çekiç',
+    monsterImg:'https://images.wikia.com/winx/images/d/d4/Shadow_Creature.png'
+  },
+  {
+    id:'forest',
+    name:'Kara Çamur Ormanı',
+    bgClass:'forest',
+    desc:'Sarmaşık Dev kökleriyle saldırıyor!',
+    monsterName:'Sarmaşık Dev',
+    monsterType:'Zehirli Kök',
+    monsterImg:'https://images.wikia.com/winx/images/d/d4/Shadow_Creature.png'
+  },
+  {
+    id:'tower',
+    name:'Bulutlu Kule',
+    bgClass:'tower',
+    desc:'Trix Cadı Muhafızı karanlık büyüler saçıyor!',
+    monsterName:'Kule Nöbetçisi',
+    monsterType:'Kara Küre',
+    monsterImg:'https://images.wikia.com/winx/images/d/d4/Shadow_Creature.png'
+  },
+  {
+    id:'tech',
+    name:'Zenith Uydu Hattı',
+    bgClass:'tech',
+    desc:'Mega Virüs Golemi Alfea ağını ele geçiriyor!',
+    monsterName:'Virüs Golemi',
+    monsterType:'Aşırı Yükleme',
+    monsterImg:'https://images.wikia.com/winx/images/d/d4/Shadow_Creature.png'
+  }
+];
+
+const FAIRIES=[
+  {name:'Bloom',power:'Ejderha Ateşi',img:'https://images.wikia.com/winx/images/4/4b/Bloom_magic_winx_1.png',spells:[
+    {name:'Ateş Küresi',icon:'🔥',dmg:18,push:12,c:'#ff4d4d',info:'Güçlü ateş darbesi vurur'},
+    {name:'Ejder Patlaması',icon:'💥',dmg:26,push:18,c:'#ff7a36',info:'Yüksek hasar ve devasa itme'},
+    {name:'Alev Kalkanı',icon:'🛡️',dmg:10,push:8,c:'#ffaa33',info:'Güvenli vuruş'},
+    {name:'Sihirli Şifa',icon:'💖',dmg:0,heal:24,c:'#ff66aa',info:'+24 can yeniler'}
+  ]},
+  {name:'Stella',power:'Güneş Işığı',img:'https://images.wikia.com/winx/images/9/9b/Stella_magic_winx.png',spells:[
+    {name:'Güneş Işını',icon:'☀️',dmg:18,push:12,c:'#ffb833',info:'Parlak güneş mermisi'},
+    {name:'Süpernova',icon:'🌟',dmg:26,push:18,c:'#ffd24d',info:'Işık patlaması ve itme'},
+    {name:'Işık Duvarı',icon:'✨',dmg:10,push:8,c:'#ffe066',info:'Savunma darbesi'},
+    {name:'Işıltı Şifası',icon:'💖',dmg:0,heal:24,c:'#ff99bb',info:'+24 can yeniler'}
+  ]},
+  {name:'Flora',power:'Doğa Gücü',img:'https://images.wikia.com/winx/images/c/c5/Flora_magic_winx.png',spells:[
+    {name:'Sarmaşık Oku',icon:'🌿',dmg:18,push:12,c:'#4cd964',info:'Keskin sarmaşık atağı'},
+    {name:'Bahar Fırtınası',icon:'🌸',dmg:26,push:18,c:'#63e6be',info:'Doğanın öfkesi'},
+    {name:'Yaprak Kalkanı',icon:'🍃',dmg:10,push:8,c:'#8ce99a',info:'Dengeli doğa darbesi'},
+    {name:'Doğal Canlanma',icon:'💖',dmg:0,heal:24,c:'#ff80bf',info:'+24 can yeniler'}
+  ]},
+  {name:'Musa',power:'Müzik & Ses',img:'https://images.wikia.com/winx/images/5/52/Musa_magic_winx.png',spells:[
+    {name:'Ses Dalgası',icon:'🎵',dmg:18,push:12,c:'#e64980',info:'Sonik darbe'},
+    {name:'Mega Melodi',icon:'🔊',dmg:26,push:18,c:'#f783ac',info:'Güçlü ses patlaması'},
+    {name:'Ritim Bariyeri',icon:'🎶',dmg:10,push:8,c:'#ff8787',info:'Hızlı ritmik darbe'},
+    {name:'Armoni Şifası',icon:'💖',dmg:0,heal:24,c:'#ffa8cc',info:'+24 can yeniler'}
+  ]},
+  {name:'Tecna',power:'Teknoloji',img:'https://images.wikia.com/winx/images/f/f6/Tecna_magic_winx.png',spells:[
+    {name:'Lazer Işını',icon:'⚡',dmg:18,push:12,c:'#3bc9db',info:'Odaklanmış lazer'},
+    {name:'Plazma Bombası',icon:'🔮',dmg:26,push:18,c:'#74c0fc',info:'Ağır plazma vuruşu'},
+    {name:'Siber Kalkan',icon:'🛡️',dmg:10,push:8,c:'#9775fa',info:'Dengeli enerji darbesi'},
+    {name:'Nano Onarım',icon:'💖',dmg:0,heal:24,c:'#f783ac',info:'+24 can yeniler'}
+  ]},
+  {name:'Layla',power:'Morphix Sıvısı',img:'https://images.wikia.com/winx/images/0/07/Aisha_Magic_Winx.png',spells:[
+    {name:'Morphix Dalgası',icon:'🌊',dmg:18,push:12,c:'#4dabf7',info:'Sıvı enerji oku'},
+    {name:'Girdap Patlaması',icon:'🌀',dmg:26,push:18,c:'#38d9a9',info:'Canavarı uzağa savurur'},
+    {name:'Plazma Duvarı',icon:'💧',dmg:10,push:8,c:'#66d9e8',info:'Sağlam savunma atağı'},
+    {name:'Okyanus Şifası',icon:'💖',dmg:0,heal:24,c:'#f06595',info:'+24 can yeniler'}
+  ]}
+];
+
+let selectedFairy=FAIRIES[0];
+let currentRegionIndex=0;
+let score=0;
+let lives=3; // v20: 3 can hakkı
+let fairyHP=100;
+let monsterHP=100;
+let fairyPos=4;    // % sol
+let monsterPos=4;  // % sağ
+let timeLeft=45;
+let timerId=null;
+let monsterMoveId=null;
+let isBusy=false;
+let isTrapped=false;
+let trapTimer=null;
+let audioEnabled=true;
+let audioCtx=null;
+
+function initApp(){
+  renderSparkles();
+  renderFairyCards();
+  renderRegionGrid();
+  loadSavedScore();
+  updateLivesDisplay();
+}
+
+function loadSavedScore(){
+  const s=localStorage.getItem('winx_alfea_score_v19');
+  if(s){
+    document.getElementById('topScore').innerText=s;
+  }
+}
+
+function saveScore(val){
+  const s=Number(localStorage.getItem('winx_alfea_score_v19')||0);
+  if(val>s){
+    localStorage.setItem('winx_alfea_score_v19',val);
+    document.getElementById('topScore').innerText=val;
+  }
+}
+
+function updateLivesDisplay(){
+  const renderStars=(containerId)=>{
+    const el=document.getElementById(containerId);
+    if(!el) return;
+    let html='';
+    for(let i=1;i<=3;i++){
+      if(i<=lives){
+        html+=`<span class="life-star">⭐</span>`;
+      }else{
+        html+=`<span class="life-star lost">⭐</span>`;
+      }
+    }
+    el.innerHTML=html;
+  };
+  renderStars('mapLives');
+  renderStars('battleLives');
+}
+
+function check50PointReward(currentPoints){
+  if(currentPoints>=50 && !sessionStorage.getItem('winx_50_reward_shown')){
+    sessionStorage.setItem('winx_50_reward_shown','1');
+    setTimeout(()=>{
+      openCertModal();
+    }, 600);
+  }
+}
+
+function openCertModal(){
+  const modal=document.getElementById('certModal');
+  if(!modal) return;
+  document.getElementById('certFairyImg').src=selectedFairy.img;
+  document.getElementById('certFairyName').innerText=selectedFairy.name;
+  
+  // Bugünü yerel formatta yaz
+  const today=new Date();
+  const dateStr=today.toLocaleDateString('tr-TR', {day:'numeric', month:'long', year:'numeric'});
+  const dateEl=document.getElementById('diplomaDate');
+  if(dateEl) dateEl.innerText=dateStr;
+
+  modal.style.display='grid';
+  playTrophySound();
+}
+
+function closeCertModal(){
+  const modal=document.getElementById('certModal');
+  if(modal) modal.style.display='none';
+}
+
+function playTrophySound(){
+  if(!audioEnabled) return;
+  beep(523,0.12,'triangle');
+  setTimeout(()=>beep(659,0.14,'triangle'),110);
+  setTimeout(()=>beep(784,0.16,'triangle'),240);
+  setTimeout(()=>beep(1046,0.32,'triangle'),390);
+}
+
+function renderSparkles(){
+  const box=document.getElementById('sparkles');
+  box.innerHTML='';
+  for(let i=0;i<45;i++){
+    const d=document.createElement('i');
+    d.style.left=Math.random()*100+'%';
+    d.style.top=Math.random()*100+'%';
+    d.style.animationDelay=(Math.random()*2.5)+'s';
+    box.appendChild(d);
+  }
+}
+
+function renderFairyCards(){
+  const list=document.getElementById('fairyList');
+  list.innerHTML='';
+  FAIRIES.forEach((f,idx)=>{
+    const b=document.createElement('button');
+    b.className='fairy-card';
+    b.innerHTML=`
+      <div class="portrait"><img src="${f.img}" alt="${f.name}"></div>
+      <strong>${f.name}</strong>
+      <span>${f.power}</span>
+    `;
+    b.onclick=()=>selectFairy(idx);
+    list.appendChild(b);
+  });
+}
+
+function renderRegionGrid(){
+  const grid=document.getElementById('regionGrid');
+  grid.innerHTML='';
+  REGIONS.forEach((r,idx)=>{
+    const b=document.createElement('button');
+    b.className='region-btn';
+    b.innerHTML=`
+      <img class="region-monster-thumb" src="${r.monsterImg}" alt="${r.monsterName}">
+      <strong>${r.name}</strong>
+      <span>${r.monsterName}</span>
+      <span style="color:#7d4ac8;margin-top:2px;">SAVAŞA GİR ➔</span>
+    `;
+    b.onclick=()=>startBattle(idx);
+    grid.appendChild(b);
+  });
+}
+
+function selectFairy(idx){
+  selectedFairy=FAIRIES[idx];
+  beep(480,0.08);
+  openMap();
+}
+
+function openHome(){
+  closeCinematic();
+  clearInterval(timerId);
+  clearInterval(monsterMoveId);
+  showScreen('homeScreen');
+}
+
+function openMap(){
+  closeCinematic();
+  clearInterval(timerId);
+  clearInterval(monsterMoveId);
+  document.getElementById('mapScore').innerText=score;
+  updateLivesDisplay();
+  const overBox=document.getElementById('gameOverBox');
+  if(lives<=0){
+    overBox.style.display='block';
+  }else{
+    overBox.style.display='none';
+  }
+  showScreen('mapScreen');
+}
+
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function startBattle(regionIdx){
+  if(lives<=0){
+    // Canlar bitmişse yeni oyuna başlarken sıfırla
+    lives=3;
+    score=0;
+    document.getElementById('mapScore').innerText='0';
+    updateLivesDisplay();
+  }
+
+  currentRegionIndex=regionIdx;
+  const region=REGIONS[currentRegionIndex];
+
+  closeCinematic();
+  showScreen('battleScreen');
+
+  // Arka plan ve başlık
+  const bg=document.getElementById('battleBg');
+  bg.className='bg '+region.bgClass;
+  document.getElementById('arenaTitle').innerText=region.name;
+
+  // HUD
+  document.getElementById('hudFairyImg').src=selectedFairy.img;
+  document.getElementById('hudFairyName').innerText=selectedFairy.name;
+  document.getElementById('hudMonsterImg').src=region.monsterImg;
+  document.getElementById('hudMonsterName').innerText=region.monsterName;
+  document.getElementById('hudMonsterDetail').innerText=region.monsterType;
+
+  // Dövüşçü görselleri
+  document.getElementById('battleFairyImg').src=selectedFairy.img;
+  document.getElementById('battleMonsterImg').src=region.monsterImg;
+
+  // Yetenekler
+  renderAbilities();
+
+  // Değerleri sıfırla
+  fairyHP=100;
+  monsterHP=100;
+  fairyPos=4;
+  monsterPos=4;
+  timeLeft=45;
+  isBusy=false;
+  clearTrap();
+
+  updateHUD();
+  updatePositions();
+
+  clearInterval(timerId);
+  timerId=setInterval(onTimerTick,1000);
+
+  clearInterval(monsterMoveId);
+  // Canavar periye doğru adım adım yaklaşır
+  monsterMoveId=setInterval(monsterStepForward, 1250);
+}
+
+function renderAbilities(){
+  const box=document.getElementById('abilityList');
+  box.innerHTML='';
+  selectedFairy.spells.forEach((sp,idx)=>{
+    const btn=document.createElement('button');
+    btn.className='ability';
+    btn.style.setProperty('--c',sp.c);
+    btn.innerHTML=`
+      <b>${sp.icon}</b>
+      <div>${sp.name}</div>
+      <small>${sp.info}</small>
+    `;
+    btn.onclick=()=>castFairySpell(idx);
+    box.appendChild(btn);
+  });
+}
+
+function onTimerTick(){
+  timeLeft--;
+  document.getElementById('timer').innerText=timeLeft;
+  if(timeLeft<=0){
+    endBattle(false,'Süre doldu! Alfea savunması zamanında tamamlanamadı.');
+  }
+}
+
+function monsterStepForward(){
+  if(isBusy || fairyHP<=0 || monsterHP<=0) return;
+
+  // Canavar adım atarak yaklaşır (sağ pozisyon artar)
+  // Mesafe kontrolü: fairyPos + monsterPos >= 72 ise temas eder
+  if((fairyPos + monsterPos) < 70){
+    monsterPos += 4.5;
+    updatePositions();
+  }else{
+    // CANAVAR PERİYE TEMAS ETTİ!
+    handleMonsterTouchFairy();
+    return;
+  }
+
+  // Yaklaştıkça arada bir büyü atar
+  if(Math.random()<0.38){
+    castMonsterAttack();
+  }
+}
+
+/* v21: Canavar periye dokunduğunda 1 can gider ve canavar geri püskürtülür */
+function handleMonsterTouchFairy(){
+  if(isBusy) return;
+  isBusy=true;
+
+  beep(180,0.18,'sawtooth');
+  triggerTouchDamageEffect();
+
+  // 1 Can kaybet
+  lives--;
+  updateLivesDisplay();
+
+  // Canavar temas edince geriye sıçrar
+  monsterPos = Math.max(4, monsterPos - 22);
+  updatePositions();
+
+  // Canlar bitti mi?
+  if(lives<=0){
+    setTimeout(()=>{
+      endBattle(false, 'Canavar perini yakaladı ve tüm canların tükendi!');
+    }, 450);
+    return;
+  }else{
+    setPrompt(`⚠️ Canavar sana dokundu! 1 Can kaybettin! Kalan Can: ${lives}`);
+    setTimeout(()=>{
+      isBusy=false;
+    }, 550);
+  }
+}
+
+function triggerTouchDamageEffect(){
+  const fx=document.getElementById('touchFx');
+  const fairyEl=document.getElementById('fairyFighter');
+  if(fx){
+    fx.classList.add('on');
+    setTimeout(()=>fx.classList.remove('on'), 350);
+  }
+  if(fairyEl){
+    fairyEl.classList.add('fairy-touch-hit');
+    setTimeout(()=>fairyEl.classList.remove('fairy-touch-hit'), 420);
+  }
+}
+
+function moveFairy(delta){
+  if(isBusy || isTrapped) return;
+  fairyPos = Math.max(0, Math.min(50, fairyPos + delta));
+  updatePositions();
+  beep(520,0.04);
+
+  // Perinin canavara kendisinin çarpmasını engelle
+  if((fairyPos + monsterPos) >= 70){
+    handleMonsterTouchFairy();
+  }
+}
+
+function updatePositions(){
+  document.getElementById('fairyFighter').style.left=fairyPos+'%';
+  document.getElementById('monsterFighter').style.right=monsterPos+'%';
+}
+
+function updateHUD(){
+  document.getElementById('fairyHpBar').style.width=Math.max(0,fairyHP)+'%';
+  document.getElementById('enemyHpBar').style.width=Math.max(0,monsterHP)+'%';
+  document.getElementById('hudFairyHPText').innerText=`${Math.round(fairyHP)} / 100`;
+  document.getElementById('hudMonsterHPText').innerText=`${Math.round(monsterHP)} / 100`;
+  document.getElementById('hudScore').innerText=score;
+}
+
+function castFairySpell(idx){
+  if(isBusy || isTrapped) return;
+  const sp=selectedFairy.spells[idx];
+  isBusy=true;
+
+  // Büyü sesi ve görseli
+  beep(640,0.08);
+  animateCast(true,sp.c);
+
+  setTimeout(()=>{
+    if(sp.heal){
+      fairyHP=Math.min(100,fairyHP+sp.heal);
+      updateHUD();
+      setPrompt(`✨ ${selectedFairy.name} şifa büyüsüyle +${sp.heal} can yeniledi!`);
+      isBusy=false;
+    }else{
+      // Hasar ve canavarı geriye itme
+      monsterHP=Math.max(0,monsterHP-sp.dmg);
+      // Büyü canavarı geriye püskürtür (monsterPos küçülür)
+      monsterPos=Math.max(2, monsterPos - (sp.push || 10));
+      updatePositions();
+      updateHUD();
+
+      animateImpact(false,sp.c);
+      beep(280,0.12,'square');
+
+      if(monsterHP<=0){
+        endBattle(true,`${selectedFairy.name}, muazzam bir büyüyle ${REGIONS[currentRegionIndex].monsterName}'ı yendi!`);
+        return;
+      }
+
+      setPrompt(`💥 ${selectedFairy.name}, ${sp.name} ile ${sp.dmg} hasar verdi ve canavarı geriye itti!`);
+      
+      // Canavar karşı saldırı hazırlar
+      setTimeout(()=>{
+        if(monsterHP>0 && Math.random()<0.75){
+          castMonsterAttack();
+        }else{
+          isBusy=false;
+        }
+      },450);
+    }
+  },320);
+}
+
+function castMonsterAttack(){
+  if(monsterHP<=0) return;
+  const region=REGIONS[currentRegionIndex];
+  animateCast(false,'#ff4070');
+  beep(210,0.1,'sawtooth');
+
+  setTimeout(()=>{
+    // Canavar atağı: bazen tuzak kurar, bazen direkt hasar verir
+    const roll=Math.random();
+    if(roll<0.30){
+      // Dev Tuzak
+      spawnTrap();
+    }else{
+      // Hasar
+      const dmg=Math.floor(12+Math.random()*11);
+      fairyHP=Math.max(0,fairyHP-dmg);
+      updateHUD();
+      animateImpact(true,'#ff3366');
+      beep(190,0.14,'sawtooth');
+
+      if(fairyHP<=0){
+        // Peri enerjisi bittiğinde de 1 can kaybeder
+        lives--;
+        updateLivesDisplay();
+        if(lives<=0){
+          endBattle(false,`${region.monsterName} karanlık darbesiyle perini etkisiz kıldı ve canların bitti!`);
+        }else{
+          endBattle(false,`${region.monsterName} perini yendi! 1 Can kaybettin. Kalan Can: ${lives}`);
+        }
+        return;
+      }
+      setPrompt(`⚠️ ${region.monsterName} ${dmg} hasar vurdu!`);
+    }
+    isBusy=false;
+  },360);
+}
+
+function spawnTrap(){
+  clearTrap();
+  isTrapped=true;
+  const tLayer=document.getElementById('trapLayer');
+  const fairyBox=document.getElementById('fairyFighter');
+  fairyBox.classList.add('trapped');
+
+  const traps=['vine','ice','bubble','fireball'];
+  const tType=traps[Math.floor(Math.random()*traps.length)];
+  const icons={vine:'🌿',ice:'❄️',bubble:'🫧',fireball:'🔥'};
+
+  const tr=document.createElement('div');
+  tr.id='activeTrap';
+  tr.className=`trap ${tType}`;
+  tr.innerText=icons[tType];
+  tr.style.left=(fairyPos+14)+'%';
+  tr.style.top='55%';
+  tLayer.appendChild(tr);
+
+  setPrompt('🕸️ Tuzağa yakalandın! Kurtulmak için yön tuşlarına (◀ / ▶) hızlıca bas!');
+
+  // 3 saniye sonra otomatik kırılır
+  trapTimer=setTimeout(breakTrap,3200);
+}
+
+function breakTrap(){
+  const tr=document.getElementById('activeTrap');
+  if(tr){
+    tr.classList.add('break');
+    setTimeout(()=>clearTrap(),380);
+  }else{
+    clearTrap();
+  }
+}
+
+function clearTrap(){
+  isTrapped=false;
+  clearTimeout(trapTimer);
+  document.getElementById('trapLayer').innerHTML='';
+  document.getElementById('fairyFighter').classList.remove('trapped');
+}
+
+function animateCast(isFairy,color){
+  const aura=document.getElementById(isFairy?'fairyAura':'enemyAura');
+  aura.style.setProperty('--spell',color);
+  aura.classList.remove('aura-on');
+  void aura.offsetWidth;
+  aura.classList.add('aura-on');
+
+  const fighter=document.getElementById(isFairy?'fairyFighter':'monsterFighter');
+  fighter.classList.add('cast');
+  setTimeout(()=>fighter.classList.remove('cast'),500);
+}
+
+function animateImpact(onFairy,color){
+  const target=document.getElementById(onFairy?'fairyFighter':'monsterFighter');
+  target.classList.add('hit');
+  setTimeout(()=>target.classList.remove('hit'),450);
+
+  const fxLayer=document.getElementById('fxLayer');
+  const imp=document.createElement('div');
+  imp.className='impact '+(onFairy?'enemy':'');
+  imp.style.setProperty('--spell',color);
+  imp.style.left=onFairy?(fairyPos+12)+'%':(100-monsterPos-12)+'%';
+  imp.style.top='50%';
+  fxLayer.appendChild(imp);
+  imp.classList.add('explode');
+  setTimeout(()=>imp.remove(),600);
+}
+
+function setPrompt(txt){
+  document.getElementById('battlePrompt').innerText=txt;
+}
+
+function endBattle(isWin,descText){
+  clearInterval(timerId);
+  clearInterval(monsterMoveId);
+  clearTrap();
+
+  const region=REGIONS[currentRegionIndex];
+  const cinema=document.getElementById('cinematicScreen');
+  cinema.style.display='grid';
+
+  const fairyImg=document.getElementById('cinemaFairyImg');
+  const fairyName=document.getElementById('cinemaFairyName');
+  const fairyBox=document.getElementById('cinemaFairyBox');
+
+  const monsterImg=document.getElementById('cinemaMonsterImg');
+  const monsterName=document.getElementById('cinemaMonsterName');
+  const monsterBox=document.getElementById('cinemaMonsterBox');
+
+  const fScoreBox=document.getElementById('cinemaFairyScoreBox');
+  const mScoreBox=document.getElementById('cinemaMonsterScoreBox');
+
+  fairyImg.src=selectedFairy.img;
+  fairyName.innerText=selectedFairy.name;
+  monsterImg.src=region.monsterImg;
+  monsterName.innerText=region.monsterName;
+
+  document.getElementById('cinemaFairyScore').innerText=Math.round(fairyHP);
+  document.getElementById('cinemaMonsterScore').innerText=Math.round(monsterHP);
+
+  if(isWin){
+    // v21: Her zaferde +10 puan garanti eklenir
+    score += 10;
+    saveScore(score);
+    document.getElementById('hudScore').innerText=score;
+    document.getElementById('mapScore').innerText=score;
+
+    document.getElementById('cinemaTitle').innerText='BÖLGE TEMİZLENDİ! (+10 PUAN)';
+    document.getElementById('cinemaTitle').style.color='#1f8b4c';
+    document.getElementById('cinemaStars').innerText='⭐⭐⭐';
+
+    fairyBox.className='cinematic-actor winner';
+    monsterBox.className='cinematic-actor loser';
+
+    fScoreBox.className='score-box winner-score';
+    mScoreBox.className='score-box';
+
+    // 50 puan kontrolü (Alfea Başarı Belgesi)
+    const badgeArea=document.getElementById('badgeArea');
+    if(score>=50){
+      badgeArea.innerHTML=`<div class="badge-50">🎓 50 PUAN ALFEA DİPLOMASI AÇILDI! ⭐⭐⭐</div>`;
+      check50PointReward(score);
+    }else{
+      badgeArea.innerHTML=`<div style="font-weight:900;color:#6d3fb5;margin-top:4px;">Toplam Puanın: ${score} / 50 (Hedefe ${50-score} puan kaldı!)</div>`;
+    }
+
+    beep(523,0.12,'triangle');
+    setTimeout(()=>beep(659,0.12,'triangle'),120);
+    setTimeout(()=>beep(784,0.18,'triangle'),240);
+  }else{
+    document.getElementById('cinemaTitle').innerText='SAVUNMA DÜŞTÜ';
+    document.getElementById('cinemaTitle').style.color='#b8283f';
+    document.getElementById('cinemaStars').innerText='⭐☆☆';
+
+    fairyBox.className='cinematic-actor loser';
+    monsterBox.className='cinematic-actor winner';
+
+    fScoreBox.className='score-box';
+    mScoreBox.className='score-box winner-score';
+
+    const badgeArea=document.getElementById('badgeArea');
+    if(lives<=0){
+      badgeArea.innerHTML=`<div style="color:#b8283f;font-weight:950;margin-top:4px;">⚠️ 3 Canın bitti! Puan sıfırlandı.</div>`;
+    }else{
+      badgeArea.innerHTML=`<div style="color:#b8283f;font-weight:950;margin-top:4px;">Kalan Can: ${lives} / 3</div>`;
+    }
+
+    beep(260,0.22,'sawtooth');
+  }
+
+  document.getElementById('cinemaDesc').innerText=descText;
+}
+
+function closeCinematic(){
+  document.getElementById('cinematicScreen').style.display='none';
+}
+
+function retryBattle(){
+  closeCinematic();
+  startBattle(currentRegionIndex);
+}
+
+function nextBattleFromCinema(){
+  closeCinematic();
+  // Sıradaki bölgeye otomatik geç (döngüsel)
+  const nextIdx=(currentRegionIndex+1)%REGIONS.length;
+  startBattle(nextIdx);
+}
+
+function toggleAudio(){
+  audioEnabled=!audioEnabled;
+  const label=audioEnabled?'🔊 Ses: Açık':'🔇 Ses: Kapalı';
+  document.getElementById('homeSoundBtn').innerText=label;
+  document.getElementById('battleSoundBtn').innerText=label;
+}
+
+function beep(freq,dur,type='sine'){
+  if(!audioEnabled) return;
+  try{
+    if(!audioCtx) audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+    const osc=audioCtx.createOscillator();
+    const g=audioCtx.createGain();
+    osc.type=type;
+    osc.frequency.setValueAtTime(freq,audioCtx.currentTime);
+    g.gain.setValueAtTime(0.08,audioCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.0001,audioCtx.currentTime+dur);
+    osc.connect(g);
+    g.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime+dur);
+  }catch(e){}
+}
+
+window.addEventListener('keydown',(e)=>{
+  if(e.key==='ArrowLeft'||e.key==='a'||e.key==='A'){
+    moveFairy(-6);
+    if(isTrapped) breakTrap();
+  }
+  if(e.key==='ArrowRight'||e.key==='d'||e.key==='D'){
+    moveFairy(6);
+    if(isTrapped) breakTrap();
+  }
+});
+
+window.onload=initApp;
+</script>
+</body>
+</html>
